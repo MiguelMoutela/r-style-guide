@@ -53,7 +53,7 @@ foo.R
 
 ### Identifiers
 Don't use hyphens (` -`) in identifiers.
-Variable names should be all lower case and words separated with underscores
+Variable names should be all lower case and words separated with an underscore
 (`variable_name`). Function names should have an initial capital letter and no dots
 (`FunctionName`); constants are named like functions but with an initial k.
 
