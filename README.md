@@ -52,19 +52,19 @@ foo.R
 ```
 
 ### Identifiers
-Don't use underscores (`_ `) or hyphens (` -`) in identifiers.
-Variable names should be all lower case. and words separated withdots
-(`variable.name`). Function names should have an initial capital letter and no dots
+Don't use hyphens (` -`) in identifiers.
+Variable names should be all lower case and words separated with an underscore
+(`variable_name`). Function names should have an initial capital letter and no dots
 (`FunctionName`); constants are named like functions but with an initial k.
 
 ```R
 # good
-variable.name
-avg.clicks
+variable_name
+avg_clicks
 
 # bad
 avgClicks
-avg_Clicks
+avg-Clicks
 ```
 
 ```R
@@ -77,7 +77,7 @@ calculate_avg_clicks
 calculateAvgClicks
 ```
 
-Function names should be imperative eg. `MakePlots`, `ComputeStatistics`  
+Function names should be imperative eg. `MakePlots`, `ComputeStatistics`
 *Exception: When creating a classed object, the function name (constructor)
 and class should match (e.g., lm).*
 
@@ -96,7 +96,7 @@ This is the width of github's diff view without wrapping.
 When indenting your code, use two spaces. Never use tabs or mix tabs and spaces.
 
 ### Spacing
-- Place spaces around all binary operators (=, +, -, <-, etc.).  
+- Place spaces around all binary operators (=, +, -, <-, etc.).
 *Exception: Spaces around ='s are optional when passing parameters in a function call.*
 - Do not place a space before a comma, but always place one after a comma.
 
@@ -124,7 +124,7 @@ if (debug)
 if(debug)
 ```
 
-- Do not place spaces around code in parentheses or square brackets.  
+- Do not place spaces around code in parentheses or square brackets.
 *Exception: Always place a space after a comma.*
 
 ```R
@@ -288,4 +288,3 @@ CalculateSampleCovariance <- function(x, y, verbose = TRUE) {
   return(covariance)
 }
 ```
-
